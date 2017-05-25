@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cars</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <input type="text" id='car-data-search-value' />
+    <button id='car-data-search'>Search</button>
+	<table cellpadding="0" cellspacing="0">
+		<thead>
+			<tr>
+				<th id='car-data-id'>ID</th>
+				<th id='car-data-manufacturer'>Manufacturer</th>
+				<th id='car-data-model'>Model</th>
+				<th id='car-data-price'>Price</th>
+				<th id='car-data-acceleration'>0 - 60 (seconds)</th>
+				<th id='car-data-topspeed'>Top Speed (mph)</th>
+			</tr>
+		</thead>
+		<tbody id="car-data-body">
+			<!--
+				This is where the data from the data needs to be displayed.
+			-->
+		</tbody>
+        <tfoot id='car-data-footer'>
+            <td>
+                <select id="car-data-filter-id">
+                    <option value="true" selected>All</option>
+                </select>
+            </td>
+            <td>
+                <select id="car-data-filter-manufacturer">
+                    <option value="true" selected>All</option>
+                </select>
+            </td>
+            <td>
+                <select id="car-data-filter-model">
+                    <option value="true" selected>All</option>
+                </select>
+            </td>
+            <td>
+                <select id="car-data-filter-price">
+                    <option value="true" selected>All</option>
+                </select>
+            </td>
+            <td>
+                <select id="car-data-filter-acceleration">
+                    <option value="true" selected>All</option>
+                </select>
+            </td>
+            <td>
+                <select id="car-data-filter-topSpeed">
+                    <option value='true' selected>All</option>
+                </select>
+            </td>
+
+        </tfoot>
+	</table>
+    <script src='./index.js' type='text/javascript'></script>
+</body>
+</html>
